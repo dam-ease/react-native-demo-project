@@ -75,18 +75,17 @@ workflows:
             - name: Set up code signing settings on Xcode project
               script: |
                 xcode-project use-profiles --warn-only
-            - name: Clean iOS folder
-              script: |
-                # Clean everything
-                rm -rf node_modules
-                rm -rf ios/Pods ios/Podfile.lock
-                rm -rf ~/Library/Developer/Xcode/DerivedData
-                npm ci
+            # - name: Clean iOS folder
+            #   script: |
+            #     rm -rf ~/Library/Caches/CocoaPods
 
-                cd ios
-                pod deintegrate
-                pod cache clean --all
-                pod install --repo-update
+            #     rm -rf Pods
+
+            #     rm -rf ~/Library/Developer/Xcode/DerivedData/*
+
+            #     pod deintegrate
+
+            #     pod setup
             # - name: Increment build number
             #   script: |
             #     # Information about getting the latest build version can be found here: https://docs.codemagic.io/knowledge-codemagic/build-versioning/#app-store-or-testflight-latest-build-number
