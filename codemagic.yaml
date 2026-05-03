@@ -75,10 +75,20 @@ workflows:
             - name: Set up code signing settings on Xcode project
               script: |
                 xcode-project use-profiles --warn-only
-            - name: Clean Step
+            - name: Clean iOS folder
               script: |
+                # Clean everything
+                rm -rf node_modules
+                rm -rf ios/Pods
+                rm -rf ios/Podfile.lock
+                rm -rf ~/Library/Developer/Xcode/DerivedData
+
+                # Reinstall JS deps
+                npm install
+                # or yarn install
+
+                # Reinstall pods
                 cd ios
-                rm -rf Pods Podfile.lock ~/Library/Developer/Xcode/DerivedData
                 pod install --repo-update
             # - name: Increment build number
             #   script: |
@@ -88,15 +98,13 @@ workflows:
             #     agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
             - name: Build ipa for distribution
               script: |
-                xcodebuild archive \
-                  -workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
-                  -scheme "$XCODE_SCHEME" \
-                  -configuration Release \
-                  -archivePath "$CM_BUILD_DIR/build/ios/archive/cmreactnative.xcarchive" \
-                  | tee /tmp/xcodebuild_full.log
+                xcode-project build-ipa \
+                  --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
+                  --scheme "$XCODE_SCHEME" \
+                  --export-options-plist=/Users/builder/export_options.plist
         artifacts:
             - build/ios/ipa/*.ipa
-            - /tmp/xcodebuild_full.log
+            - /tmp/xcodebuild_logs/*.log
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
         # publishing:
