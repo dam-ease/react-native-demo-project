@@ -1,4 +1,4 @@
-package io.codemagic.cmreactnative;
+package com.example.syringePumpApp;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

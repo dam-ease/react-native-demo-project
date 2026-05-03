@@ -76,9 +76,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "io.codemagic.cmreactnative"
+    namespace "com.example.syringePumpApp"
     defaultConfig {
-        applicationId "io.codemagic.cmreactnative"
+        applicationId "com.example.syringePumpApp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
