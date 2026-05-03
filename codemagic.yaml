@@ -63,7 +63,7 @@ workflows:
             XCODE_SCHEME: "cmreactnative" # <-- Put the name of your Xcode scheme here
           #   APP_ID: 1555555551 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
           node: v22.13.1
-          xcode: 26.2
+          xcode: latest
           cocoapods: default
         scripts:
             - name: Install npm dependencies
@@ -71,9 +71,7 @@ workflows:
                 npm install
             - name: Install CocoaPods dependencies
               script: |
-                cd ios
-                rm -rf Pods Podfile.lock
-                pod install --repo-update
+                cd ios && pod install
             - name: Set up code signing settings on Xcode project
               script: |
                 xcode-project use-profiles --warn-only
