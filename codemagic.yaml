@@ -54,8 +54,10 @@ workflows:
           app_store_connect: Codemagic
         environment:
           ios_signing:
-            distribution_type: app_store
-            bundle_identifier: com.example.syringePumpApp
+            provisioning_profiles:
+              - Syringe Pump App AppStore Profile
+            certificates:
+              - Syringe Pump App Certificate
           vars:
             XCODE_WORKSPACE: "cmreactnative.xcworkspace" # <-- Put the name of your Xcode workspace here
             XCODE_SCHEME: "cmreactnative" # <-- Put the name of your Xcode scheme here
