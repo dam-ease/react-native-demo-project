@@ -11,7 +11,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		618CA5476D15BF6B476CBE10 /* libPods-cmreactnative-cmreactnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BE15E545DBDF2B79E43C8C /* libPods-cmreactnative-cmreactnativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DE410F3222A60D4DB3BBEA8B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A1D95B2DB0929C93B1042AD9 /* PrivacyInfo.xcprivacy */; };
 		E23796F09FC03F6309059D4F /* libPods-cmreactnative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2916BE88109252A6D7B0F3CD /* libPods-cmreactnative.a */; };
@@ -39,13 +38,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = cmreactnative/main.m; sourceTree = "<group>"; };
 		2916BE88109252A6D7B0F3CD /* libPods-cmreactnative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cmreactnative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = cmreactnative/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		87225287527710D786BCCF36 /* Pods-cmreactnative-cmreactnativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cmreactnative-cmreactnativeTests.release.xcconfig"; path = "Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests.release.xcconfig"; sourceTree = "<group>"; };
-		91BE15E545DBDF2B79E43C8C /* libPods-cmreactnative-cmreactnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cmreactnative-cmreactnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D95B2DB0929C93B1042AD9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = cmreactnative/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		B5726066E13BABCA003046A0 /* Pods-cmreactnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cmreactnative.release.xcconfig"; path = "Target Support Files/Pods-cmreactnative/Pods-cmreactnative.release.xcconfig"; sourceTree = "<group>"; };
 		E6DD6F9E5B5D8B9CF46A8400 /* Pods-cmreactnative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cmreactnative.debug.xcconfig"; path = "Target Support Files/Pods-cmreactnative/Pods-cmreactnative.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FE39AE0AE444CB883A5C6F5F /* Pods-cmreactnative-cmreactnativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cmreactnative-cmreactnativeTests.debug.xcconfig"; path = "Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				618CA5476D15BF6B476CBE10 /* libPods-cmreactnative-cmreactnativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +99,6 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				2916BE88109252A6D7B0F3CD /* libPods-cmreactnative.a */,
-				91BE15E545DBDF2B79E43C8C /* libPods-cmreactnative-cmreactnativeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,8 +139,6 @@
 			children = (
 				E6DD6F9E5B5D8B9CF46A8400 /* Pods-cmreactnative.debug.xcconfig */,
 				B5726066E13BABCA003046A0 /* Pods-cmreactnative.release.xcconfig */,
-				FE39AE0AE444CB883A5C6F5F /* Pods-cmreactnative-cmreactnativeTests.debug.xcconfig */,
-				87225287527710D786BCCF36 /* Pods-cmreactnative-cmreactnativeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,12 +150,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "cmreactnativeTests" */;
 			buildPhases = (
-				EC78420A2C834BA0FD22F282 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				3B21A8265C409B0091FCB22B /* [CP] Embed Pods Frameworks */,
-				B90290DB876D850275388711 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,40 +293,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cmreactnative/Pods-cmreactnative-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3B21A8265C409B0091FCB22B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B90290DB876D850275388711 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cmreactnative-cmreactnativeTests/Pods-cmreactnative-cmreactnativeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C254CEB16F6A5DE79BAFE98F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,28 +309,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-cmreactnative-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC78420A2C834BA0FD22F282 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-cmreactnative-cmreactnativeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -434,7 +367,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE39AE0AE444CB883A5C6F5F /* Pods-cmreactnative-cmreactnativeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -462,7 +394,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87225287527710D786BCCF36 /* Pods-cmreactnative-cmreactnativeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
